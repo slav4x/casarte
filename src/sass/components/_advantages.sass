@@ -1,0 +1,27 @@
+.advantages
+  margin-top: 150px
+  &-list
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 20px
+  &-item
+    background: #252424
+    border-radius: 16px
+    @include flexbox
+    align-items: center
+    gap: 20px
+    padding: 20px
+    padding-right: 15px
+    img
+      width: 50px
+    &__text
+      width: calc(100% - 50px - 20px)
+      h3
+        font-size: 16px
+        font-weight: 600
+        line-height: 1.2
+        margin-bottom: 10px
+      p
+        font-size: 14px
+        // line-height: 1.2
+        opacity: 0.5
