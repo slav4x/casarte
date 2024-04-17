@@ -1,0 +1,42 @@
+.inverter
+  margin-top: 150px
+  &-stats
+    @include flexbox
+    align-items: flex-start
+    padding-left: 24px
+    gap: 40px
+    h3
+      font-size: 56px
+      line-height: 0.76
+      font-weight: 600
+      color: var(--color-brown)
+    h5
+      width: 100%
+      text-align: center
+      font-size: 16px
+      font-weight: 600
+      line-height: 1.2
+      opacity: 0.4
+      margin: 0
+    &__graph
+      flex: 1
+      &-item
+        @include flexbox
+        align-items: center
+        gap: 16px
+        margin-top: 16px
+        &:first-child
+          margin-top: 0
+        b
+          font-weight: 600
+          line-height: 1.2
+        span
+          display: block
+          height: 45px
+          background: #252424
+          border-radius: 16px
+          &.casarte
+            background: var(--color-brown)
+            width: 240px
+          &.other
+            width: 530px
