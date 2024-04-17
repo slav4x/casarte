@@ -1,0 +1,30 @@
+.flow
+  margin-top: 150px
+  &-grid
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 20px
+  &-item
+    padding: 16px
+    border-radius: 32px
+    background: #252424
+    @include flexbox
+    align-items: center
+    gap: 26px
+    img
+      width: 260px
+      height: 230px
+      border-radius: 32px
+      object-fit: cover
+      object-position: center
+    &__text
+      width: calc(100% - 260px - 26px)
+      h3
+        font-size: 24px
+        line-height: 1.2
+        font-weight: 600
+      p
+        font-size: 14px
+        line-height: 1.5
+        margin-top: 10px
+        opacity: 0.5
