@@ -1,0 +1,73 @@
+.hero
+  height: 780px
+  position: relative
+  &-slider,
+  &-slide,
+  .swiper-wrapper,
+  &-slide .container
+    height: 100%
+  &-slider
+    overflow: hidden
+    &__arrow
+      width: 24px
+      height: 24px
+      cursor: pointer
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='8' viewBox='0 0 24 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.7395 0.63921L23.8565 3.66392C24.0478 3.84953 24.0478 4.15047 23.8565 4.33608L20.7395 7.36079C20.5482 7.5464 20.2381 7.5464 20.0468 7.36079C19.8555 7.17518 19.8555 6.87424 20.0468 6.68863L22.3277 4.47529L-3.47531e-07 4.47529L-2.64429e-07 3.52471L22.3277 3.52471L20.0468 1.31137C19.8555 1.12576 19.8555 0.824822 20.0468 0.63921C20.2381 0.453599 20.5482 0.453599 20.7395 0.63921Z' fill='white'/%3E%3C/svg%3E%0A")
+      background-repeat: no-repeat
+      background-position: center
+    &__prev
+      transform: rotate(180deg)
+  .container
+    @include flexbox
+    align-items: flex-end
+  &-slide
+    padding-bottom: 95px
+    background-size: cover
+    background-position: center
+  &-text
+    padding-bottom: 30px
+    max-width: 800px
+    h4
+      font-size: 20px
+      font-weight: 600
+      line-height: 0.8
+      letter-spacing: 0.23em
+      opacity: 0.5
+      margin-bottom: 25px
+    p
+      font-size: 18px
+      line-height: 1.5
+      margin-top: 30px
+      max-width: 540px
+  &-title
+    font-size: 72px
+    font-weight: 600
+    line-height: 0.8
+  &-control
+    position: absolute
+    padding-bottom: 14px
+    z-index: 10
+    bottom: 0
+    left: 20px
+    right: 20px
+    max-width: 1300px
+    margin: 0 auto
+    height: 95px
+    @include flexbox
+    align-items: center
+    justify-content: flex-end
+    gap: 20px
+    border-top: 1px solid rgba(255,255,255,.1)
+    i
+      display: block
+      width: 1px
+      height: 40px
+      background: rgba(255,255,255,.2)
+  &-casarte
+    position: absolute
+    top: 70px
+    max-width: initial
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 4
+    pointer-events: none

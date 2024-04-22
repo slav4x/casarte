@@ -34,4 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   maskPhone();
+
+  const heroSlider = new Swiper('.hero-slider', {
+    loop: true,
+    speed: 1000,
+    navigation: {
+      nextEl: '.hero-slider__next',
+      prevEl: '.hero-slider__prev',
+    },
+  });
 });
