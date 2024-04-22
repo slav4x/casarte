@@ -52,4 +52,13 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: '.product-slider__prev',
     },
   });
+
+  const airItems = document.querySelectorAll('.air-item');
+
+  airItems.forEach((item) => {
+    item.addEventListener('mouseover', function () {
+      airItems.forEach((i) => i.classList.remove('active'));
+      item.classList.add('active');
+    });
+  });
 });

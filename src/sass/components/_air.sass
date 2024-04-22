@@ -1,0 +1,73 @@
+.air
+  margin-top: var(--margin)
+  h2
+    text-align: center
+    font-size: 48px
+    font-weight: 400
+    line-height: 0.8
+  &-grid
+    @include flexbox
+    align-items: flex-start
+    margin-top: 60px
+  &-item
+    flex: 1
+    width: 0px
+    height: 440px
+    position: relative
+    // transition: .25s
+    padding: 20px
+    background: linear-gradient(180deg, #323030 0%, #181818 100%)
+    opacity: 0.5
+    transform: skew(-5deg)
+    overflow: hidden
+    &::after
+      content: ''
+      width: 60px
+      height: 60px
+      background: #fff url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.29289 1.29289C4.68342 0.902369 5.31658 0.902369 5.70711 1.29289L11 6.58579C11.781 7.36684 11.781 8.63317 11 9.41421L5.70711 14.7071C5.31658 15.0976 4.68342 15.0976 4.29289 14.7071C3.90237 14.3166 3.90237 13.6834 4.29289 13.2929L9.58579 8L4.29289 2.70711C3.90237 2.31658 3.90237 1.68342 4.29289 1.29289Z' fill='black'/%3E%3C/svg%3E%0A") no-repeat center
+      border-radius: 100%
+      position: absolute
+      bottom: 20px
+      right: 40px
+      opacity: 0
+      transform: skew(5deg)
+      // transition: .25s
+    &__content
+      transform: skew(5deg)
+      @include flexbox
+      align-items: flex-start
+      height: 100%
+    &__img
+      // position: absolute
+      // left: 60px
+      // top: 30px
+      max-width: initial
+      margin-top: 50px
+      margin-left: 30px
+    &__text
+      margin-top: auto
+      width: 400px
+      h3
+        font-size: 32px
+        font-weight: 600
+        line-height: 0.8
+      p
+        width: 260px
+        line-height: 1.5
+        position: relative
+        max-height: 0px
+        overflow: hidden
+        padding-top: 15px
+        // transition: .4s
+    &.active
+      flex: initial
+      width: 440px
+      opacity: 1
+      border-radius: 12px
+      &::after
+        opacity: 1
+      .air-item__text
+        p
+          max-height: 150px
+    &:last-child .air-item__img
+      margin-top: 30px
