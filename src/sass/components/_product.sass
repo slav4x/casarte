@@ -1,0 +1,75 @@
+.product
+  margin-top: 40px
+  &-slider
+    background: #252424
+    border-radius: 32px
+    height: 660px
+    overflow: hidden
+    position: relative
+    .swiper-wrapper
+      z-index: 20
+    &__arrow
+      width: 24px
+      height: 24px
+      cursor: pointer
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='8' viewBox='0 0 24 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.7395 0.63921L23.8565 3.66392C24.0478 3.84953 24.0478 4.15047 23.8565 4.33608L20.7395 7.36079C20.5482 7.5464 20.2381 7.5464 20.0468 7.36079C19.8555 7.17518 19.8555 6.87424 20.0468 6.68863L22.3277 4.47529L-3.47531e-07 4.47529L-2.64429e-07 3.52471L22.3277 3.52471L20.0468 1.31137C19.8555 1.12576 19.8555 0.824822 20.0468 0.63921C20.2381 0.453599 20.5482 0.453599 20.7395 0.63921Z' fill='white'/%3E%3C/svg%3E%0A")
+      background-repeat: no-repeat
+      background-position: center
+    &__prev
+      transform: rotate(180deg)
+  &-slide
+    height: 100%
+  &-image
+    padding: 80px 0
+    height: 480px
+    @include flexbox
+    align-items: center
+    justify-content: center
+    img
+      max-height: 100%
+  &-text
+    padding: 0 55px 70px
+    @include flexbox
+    align-items: flex-end
+    width: calc(100% - 140px)
+    h3
+      font-size: 20px
+      text-transform: uppercase
+      font-weight: 600
+      line-height: 0.8
+      opacity: 0.5
+      letter-spacing: 0.23em
+      margin-bottom: 30px
+      width: 100%
+    h2
+      font-size: 72px
+      font-weight: 600
+      line-height: 0.8
+      width: calc(100% - 440px)
+    p
+      max-width: 440px
+      line-height: 1.5
+  &-control
+    position: absolute
+    z-index: 20
+    bottom: 55px
+    right: 30px
+    @include flexbox
+    align-items: center
+    justify-content: flex-end
+    gap: 20px
+    i
+      display: block
+      width: 1px
+      height: 40px
+      background: rgba(255,255,255,.2)
+  &-casarte
+    position: absolute
+    z-index: 4
+    top: 15px
+    height: 295px
+    left: 50%
+    transform: translateX(-50%)
+    max-width: initial
+    opacity: 0.5
+    pointer-events: none

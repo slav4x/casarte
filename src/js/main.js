@@ -43,4 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: '.hero-slider__prev',
     },
   });
+
+  const productSlider = new Swiper('.product-slider', {
+    loop: true,
+    speed: 1000,
+    navigation: {
+      nextEl: '.product-slider__next',
+      prevEl: '.product-slider__prev',
+    },
+  });
 });
