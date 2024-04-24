@@ -9,31 +9,31 @@ const viewportFix = (width) => {
 
 viewportFix(420);
 
-const maskOptions = {
-  mask: '+7 (000) 000-00-00',
-  lazy: false,
-  placeholderChar: '_',
-  onFocus: function () {
-    if (this.value === '') this.value = '+7 ';
-  },
-  onBlur: function () {
-    if (this.value === '+7 ') this.value = '';
-  },
-};
+// const maskOptions = {
+//   mask: '+7 (000) 000-00-00',
+//   lazy: false,
+//   placeholderChar: '_',
+//   onFocus: function () {
+//     if (this.value === '') this.value = '+7 ';
+//   },
+//   onBlur: function () {
+//     if (this.value === '+7 ') this.value = '';
+//   },
+// };
 
-const maskPhone = () => {
-  const maskedElements = document.querySelectorAll('.masked');
-  maskedElements.forEach((item) => new IMask(item, maskOptions));
-};
+// const maskPhone = () => {
+//   const maskedElements = document.querySelectorAll('.masked');
+//   maskedElements.forEach((item) => new IMask(item, maskOptions));
+// };
 
 document.addEventListener('DOMContentLoaded', function () {
-  Fancybox.bind('[data-fancybox]', {
-    dragToClose: false,
-    autoFocus: false,
-    placeFocusBack: false,
-  });
+  // Fancybox.bind('[data-fancybox]', {
+  //   dragToClose: false,
+  //   autoFocus: false,
+  //   placeFocusBack: false,
+  // });
 
-  maskPhone();
+  // maskPhone();
 
   const heroSlider = new Swiper('.hero-slider', {
     loop: true,
