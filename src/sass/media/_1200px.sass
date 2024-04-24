@@ -1,3 +1,68 @@
 @media(max-width: 1200px)
+  :root
+    --margin: 80px
+
   .container
     max-width: 1024px
+
+  .header-logo img
+    height: 20px
+  .header-nav
+    margin-left: 30px
+    gap: 30px
+  .header-btn
+    display: none
+
+  .hero-casarte
+    height: 300px
+
+  .advantages-list
+    grid-template-columns: repeat(2, 1fr)
+
+  .air-item.active
+    width: 320px
+  .air-item__text
+    width: 280px
+    h3
+      font-size: 28px
+
+  .engineers-title
+    font-size: 42px
+  .promo h2
+    font-size: 42px
+  .promo p
+    font-size: 18px
+  .ifd-item.outline img
+    object-position: left center
+  .flow-item
+    align-items: flex-start
+    gap: 20px
+  .flow-item img
+    width: 200px
+    height: 200px
+  .flow-item__text
+    width: calc(100% - 200px - 20px)
+
+  .uv-stats h2
+    font-size: 48px
+  .uv-image
+    height: auto
+
+  .footer-left,
+  .footer-right
+    max-width: 100%
+    width: 100%
+  .footer-right .footer-right__col:first-child .footer-right__block:first-child
+    @include flexbox
+    flex-direction: column
+    align-items: flex-start
+  .footer-pay
+    max-width: 220px
+
+  .product-text h2
+    font-size: 48px
+    width: 100%
+  .product-text p
+    margin-top: 20px
+  .product-image
+    height: 380px
