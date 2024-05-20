@@ -4,8 +4,7 @@
   &-wrapper
     background: #191919
     border-radius: 32px
-    padding: 30px 60px
-    padding-right: 30px
+    padding: 30px
     @include flexbox
     align-items: flex-start
   &-left
@@ -40,7 +39,7 @@
       height: 40px
       border-radius: 3px
   &-right
-    width: calc(100% - 540px)
+    width: 100%
     @include flexbox
     gap: 10px
     &__col
@@ -73,10 +72,17 @@
       &.app
         h4
           text-align: center
+          max-width: 260px
+          margin-left: auto
+          margin-right: auto
         p
           text-align: center
           line-height: 1.5
           opacity: 0.5
+      &:not(.app)
+        @include flexbox
+        flex-direction: column
+        align-items: flex-start
     &__links
       @include flexbox
       align-items: center
