@@ -49,3 +49,18 @@
           padding-right: 25px
       &:last-child
         border-bottom: 0
+  &-download
+    @include flexbox
+    align-items: center
+    gap: 15px
+    margin-top: 30px
+    line-height: 24px
+    opacity: 0.7
+    span
+      border-bottom: 1px solid #fff
+    &::before
+      content: ''
+      display: block
+      width: 24px
+      height: 24px
+      background: url(../img/svg/download.svg) no-repeat / cover
